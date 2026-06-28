@@ -57,9 +57,10 @@ const products = [
   }
 ];
 
-const productContainer =
-  document.querySelector(".product-container");
 
+const productContainer = document.querySelector(".product-container");
+const searchInput = document.getElementById("search-input");
+const filterButtons = document.querySelectorAll(".filter-btn");
 
 
 function displayProducts(items) {
@@ -88,7 +89,54 @@ function displayProducts(items) {
   });
 }
 
+
 displayProducts(products);
+
+
+searchInput.addEventListener("input", function () {
+
+    const searchValue = searchInput.value.toLowerCase();
+
+    const filteredProducts = products.filter(product =>
+        product.name.toLowerCase().includes(searchValue)
+    );
+
+    displayProducts(filteredProducts);
+
+});
+
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        // Remove active class
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        // Add active class
+        button.classList.add("active");
+
+        const category = button.dataset.category;
+
+        if(category === "all"){
+            displayProducts(products);
+            return;
+        }
+
+        const filtered = products.filter(product =>
+            product.category === category
+        );
+
+        displayProducts(filtered);
+
+    });
+
+});
+
+
 
 
 
