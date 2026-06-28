@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendCart | E-Commerce Website</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>TrendCart</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Trending Products</h1>
+      <p>Shop the latest collection with amazing deals.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH ===== -->
+  <section class="search-section">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search products..."
+    >
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories">
+    <button class="filter-btn active" data-category="all">
+      All
+    </button>
+
+    <button class="filter-btn" data-category="fashion">
+      Fashion
+    </button>
+
+    <button class="filter-btn" data-category="electronics">
+      Electronics
+    </button>
+
+    <button class="filter-btn" data-category="accessories">
+      Accessories
+    </button>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+      <!-- Product cards will come from JavaScript -->
+
+    </div>
+  </section>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-sidebar">
+
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items">
+
+      <!-- Cart items will appear here -->
+
+    </div>
+
+    <div class="cart-footer">
+      <h3>Total: ₹<span id="total-price">0</span></h3>
+      <button class="checkout-btn">
+        Checkout
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <h3>TrendCart</h3>
+    <p>Made with ❤️ using HTML, CSS and JavaScript.</p>
+
+    <div class="social-links">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
