@@ -17,6 +17,11 @@ A responsive e-commerce website built using HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript
 
+🔗 GitHub Repository:  https://github.com/suyogpes5/TrendCart-Ecommerce.git
+
+🌐 Live Demo: https://suyogpes5.github.io/TrendCart-Ecommerce/
+
+
 ## Author
 
 Suyog Samarth
